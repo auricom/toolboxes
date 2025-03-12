@@ -9,5 +9,5 @@ RUN curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/
 	mv /usr/bin/sudo /usr/bin/sudo_bak && \
     curl -fsSL https://get.jetpack.io/devbox -o /tmp/install-devbox.sh && chmod +x /tmp/install-devbox.sh && /tmp/install-devbox.sh -f && \
 	mv /usr/bin/sudo_bak /usr/bin/sudo && \
-    chown --recursive 1000 /nix /usr/local/bin/devbox && \
+    chown --recursive 1001 /nix /usr/local/bin/devbox && \
     ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker
